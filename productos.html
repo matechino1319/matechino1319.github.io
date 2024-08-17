@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Radiadores Jose</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <style>/* Estilo del encabezado */
+            header {
+                background-color: #333; /* Fondo oscuro para el encabezado */
+                color: #f4f4f4; /* Texto claro */
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en el encabezado */
+                border-bottom: 4px solid #ff5722; /* Borde inferior rojo */
+                background: linear-gradient(45deg, #333, #000); /* Gradiente en el fondo */
+                transition: background 0.5s ease; /* Transición suave para el fondo */
+            }
+            
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+                letter-spacing: 2px; /* Espaciado entre letras */
+                text-transform: uppercase; /* Texto en mayúsculas */
+                font-weight: bold;
+                color: #ff5722; /* Color rojo para el título */
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el título */
+            }
+            
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                margin: 15px 0 0;
+                background-color: #222; /* Fondo del menú más oscuro */
+                border-radius: 5px; /* Bordes redondeados */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el menú */
+            }
+            
+            nav ul li {
+                margin: 0 20px;
+            }
+            
+            nav ul li a {
+                color: #ff5722; /* Color rojo para los enlaces */
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
+                padding: 5px 10px; /* Espacio interno para los enlaces */
+                border-bottom: 3px solid transparent; /* Línea inferior transparente por defecto */
+            }
+            
+            nav ul li a:hover {
+                color: #f44336; /* Color rojo claro al pasar el ratón */
+                border-bottom: 3px solid #f44336; /* Línea inferior roja clara al pasar el ratón */
+            }
+            
+            nav ul li a.active {
+                color: #f44336; /* Color activo rojo claro */
+                border-bottom: 3px solid #f44336; /* Línea inferior activa roja clara */
+            }
+            
+            /* Añadir una animación de fondo en el encabezado */
+            header:hover {
+                background: linear-gradient(45deg, #000, #333); /* Cambia el gradiente al pasar el ratón */
+            }
+            
+        </style>
+    </header>
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="imagenes/respuesto de de correa de distribuccion.jpeg" alt="Guitarra 1">
+            <h3>repuestos de correa de distribucion</h3>
+            <p>Marca: Santander.</p>
+            <span class="precio">$199.99</span>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="producto">
+            <img src="imagenes/repuestos de bugia.jpeg" alt="Guitarra 2">
+            <h3>Respuesto de bugia</h3>
+            <p>calidad y duracion.</p>
+            <span class="precio">$349.99</span>
+            <button>Comprar Ahora</button>
+        </div>
+        <div class="producto">
+            <img src="imagenes/respuesto de bateria.jpeg" alt="Guitarra 3">
+            <h3>Bateria Boch</h3>
+            <p>Duracion garantizada.</p>
+            <span class="precio">$249.99</span>
+            <button>Comprar Ahora</button>
+        </div>
+        <style> 
+   #productos {
+    padding: 40px 20px;
+    background-color: #fbe9e7; /* Fondo claro para el contenedor de productos */
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 2.5em;
+    color: #333; /* Texto oscuro para el título */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.producto {
+    background-color: #ffffff; /* Fondo blanco para los productos */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto hover */
+}
+
+.producto:hover {
+    transform: translateY(-10px); /* Levanta ligeramente al pasar el ratón */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 1.8em;
+    color: #00796b; /* Color del título de los productos */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.producto p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.producto .precio {
+    font-size: 1.5em;
+    color: #004d40; /* Color del precio */
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.producto button {
+    background-color: #ff5722; /* Color rojo para el botón */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    width: 100%;
+}
+
+.producto button:hover {
+    background-color: #531d0d; /* Rojo más oscuro al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra en el botón al pasar el ratón */
+}
+
+
+
+        </style>
+    </section>
+    
+</body>

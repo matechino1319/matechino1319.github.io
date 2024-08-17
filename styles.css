@@ -1,0 +1,103 @@
+/* Reset básico para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbe9e7; /* Fondo claro para todo el sitio */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el encabezado */
+    border-bottom: 4px solid #ff5722; /* Borde rojo en la parte inferior */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff5722; /* Color rojo para el título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #222; /* Fondo negro más oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el menú */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ff5722; /* Color rojo para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transición suave */
+    padding: 5px 10px; /* Espacio interno para los enlaces */
+    border-bottom: 3px solid transparent; /* Línea inferior transparente por defecto */
+}
+
+nav ul li a:hover {
+    color: #f44336; /* Color rojo claro al pasar el ratón */
+    border-bottom: 3px solid #f44336; /* Línea inferior roja clara al pasar el ratón */
+}
+
+nav ul li a.active {
+    color: #f44336; /* Color activo rojo claro */
+    border-bottom: 3px solid #f44336; /* Línea inferior activa roja clara */
+}
+
+/* Estilo de la sección banner */
+.banner {
+    background:  #ff5722; /* Imagen de fondo */
+    color: #f18f8f; /* Texto blanco */
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+    border-bottom: 5px solid #ff5722; /* Borde inferior rojo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra en el banner */
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #dc4343; /* Color rojo para el título del banner */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+}
+
+.banner p {
+    font-size: 1.2em;
+    color: #e98d8d; /* Color del texto del banner */
+}
+
+/* Estilo de la imagen */
+div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 95%; /* Ancho máximo de la imagen */
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #ff5722; /* Borde rojo alrededor de la imagen */
+    box-shadow: 0 4px 8px rgba(160, 26, 26, 0.3); /* Sombra para la imagen */
+    display: block; /* Asegura que la imagen sea un bloque para centrar */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
