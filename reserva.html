@@ -24,27 +24,6 @@
             <button type="submit">Reservar</button>
         </form>
     </section>
-
-    <script>
-        // Función para obtener el valor de un parámetro de la URL
-        function getParameterByName(name) {
-            name = name.replace(/[\[\]]/g, '\\$&');
-            const url = window.location.href;
-            const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-            const results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, ' '));
-        }
-
-        // Obtener el valor del parámetro "producto" de la URL
-        const producto = getParameterByName('producto');
-
-        // Asignar el valor al campo oculto del formulario
-        if (producto) {
-            document.getElementById('producto').value = producto;
-        }
-    </script>
     
 <style>body { 
     font-family: Arial, sans-serif;
@@ -103,6 +82,26 @@
     background-color: #e64a19; /* Color de fondo al pasar el mouse */
 }
 </style>
+<script>
+    // Función para obtener el valor de un parámetro de la URL
+    function getParameterByName(name) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const url = window.location.href;
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    // Obtener el valor del parámetro "producto" de la URL
+    const producto = getParameterByName('producto');
+
+    // Asignar el valor al campo oculto del formulario
+    if (producto) {
+        document.getElementById('producto').value = producto;
+    }
+</script>
 </body>
 </html>
 
